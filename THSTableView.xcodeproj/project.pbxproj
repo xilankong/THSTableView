@@ -14,7 +14,7 @@
 		6F32CC0E1EB1D49300BA79AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F32CC0C1EB1D49300BA79AC /* LaunchScreen.storyboard */; };
 		6F32CC161EB1DE8300BA79AC /* LeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32CC151EB1DE8300BA79AC /* LeftCell.swift */; };
 		6F32CC191EB1DEA600BA79AC /* RightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32CC171EB1DEA600BA79AC /* RightCell.swift */; };
-		6F32CC1C1EB2DC6E00BA79AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32CC1B1EB2DC6E00BA79AC /* ContentView.swift */; };
+		792CF9D89C249A5A8035152F /* Pods_THSTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE72C24F304624B2A6E3EFEA /* Pods_THSTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,9 @@
 		6F32CC0F1EB1D49300BA79AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F32CC151EB1DE8300BA79AC /* LeftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftCell.swift; sourceTree = "<group>"; };
 		6F32CC171EB1DEA600BA79AC /* RightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCell.swift; sourceTree = "<group>"; };
-		6F32CC1B1EB2DC6E00BA79AC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		91D8C3B0C3129677BC983654 /* Pods-THSTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THSTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THSTableView/Pods-THSTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		BC26D4C74E6D9D31EF8464AC /* Pods-THSTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THSTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-THSTableView/Pods-THSTableView.release.xcconfig"; sourceTree = "<group>"; };
+		CE72C24F304624B2A6E3EFEA /* Pods_THSTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THSTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792CF9D89C249A5A8035152F /* Pods_THSTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D3334DC2F82FDA1DFF8262D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91D8C3B0C3129677BC983654 /* Pods-THSTableView.debug.xcconfig */,
+				BC26D4C74E6D9D31EF8464AC /* Pods-THSTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F32CBF71EB1D49300BA79AC = {
 			isa = PBXGroup;
 			children = (
 				6F32CC021EB1D49300BA79AC /* THSTableView */,
 				6F32CC011EB1D49300BA79AC /* Products */,
+				4D3334DC2F82FDA1DFF8262D /* Pods */,
+				9D1670E0F4039EDC27FD5D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				6F32CC031EB1D49300BA79AC /* AppDelegate.swift */,
-				6F32CC1B1EB2DC6E00BA79AC /* ContentView.swift */,
 				6F32CC151EB1DE8300BA79AC /* LeftCell.swift */,
 				6F32CC171EB1DEA600BA79AC /* RightCell.swift */,
 				6F32CC051EB1D49300BA79AC /* ViewController.swift */,
@@ -73,6 +86,14 @@
 			path = THSTableView;
 			sourceTree = "<group>";
 		};
+		9D1670E0F4039EDC27FD5D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE72C24F304624B2A6E3EFEA /* Pods_THSTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F32CC121EB1D49300BA79AC /* Build configuration list for PBXNativeTarget "THSTableView" */;
 			buildPhases = (
+				FE9BA55D15D866B835E565AB /* [CP] Check Pods Manifest.lock */,
 				6F32CBFC1EB1D49300BA79AC /* Sources */,
 				6F32CBFD1EB1D49300BA79AC /* Frameworks */,
 				6F32CBFE1EB1D49300BA79AC /* Resources */,
+				1F671425AA3E4007ECF5B92B /* [CP] Embed Pods Frameworks */,
+				B65DF1878365E4A0A0D60ED8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,13 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F671425AA3E4007ECF5B92B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THSTableView/Pods-THSTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65DF1878365E4A0A0D60ED8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THSTableView/Pods-THSTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9BA55D15D866B835E565AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F32CBFC1EB1D49300BA79AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6F32CC191EB1DEA600BA79AC /* RightCell.swift in Sources */,
-				6F32CC1C1EB2DC6E00BA79AC /* ContentView.swift in Sources */,
 				6F32CC161EB1DE8300BA79AC /* LeftCell.swift in Sources */,
 				6F32CC061EB1D49300BA79AC /* ViewController.swift in Sources */,
 				6F32CC041EB1D49300BA79AC /* AppDelegate.swift in Sources */,
@@ -272,6 +343,7 @@
 		};
 		6F32CC131EB1D49300BA79AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D8C3B0C3129677BC983654 /* Pods-THSTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = THSTableView/Info.plist;
@@ -284,6 +356,7 @@
 		};
 		6F32CC141EB1D49300BA79AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC26D4C74E6D9D31EF8464AC /* Pods-THSTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = THSTableView/Info.plist;

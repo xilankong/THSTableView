@@ -10,12 +10,14 @@ import UIKit
 
 class LeftCell: UITableViewCell {
 
-    
+    //MARK: - 初始化leftCell
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        let line = UIView(frame: CGRect(x: 0, y: self.frame.size.height - 0.5, width: self.frame.size.width, height: 0.5))
-        line.backgroundColor = UIColor.lightGray
-        self.contentView.addSubview(line)
+        let view =  UIView()
+        view.backgroundColor = UIColor.clear
+        selectedBackgroundView = view
+        
+        contentView.addLine()
         self.textLabel?.font = UIFont.systemFont(ofSize: 14.0)
     }
     
@@ -24,9 +26,7 @@ class LeftCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+//        super.setSelected(selected, animated: animated)
     }
 
 }
