@@ -1,3 +1,3 @@
 # THSTableView
 
-![](2017-05-27 15_30_18.gif)
+![](https://github.com/xilankong/THSTableView/blob/master/git.gif)
